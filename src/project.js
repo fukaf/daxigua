@@ -1206,12 +1206,12 @@ window.__require = function e(t, n, o) {
             n.position = this.lineNode.children[1].position;
             n.scale = 0;
             // 物理引擎
-            n.getComponent(cc.RigidBody).type = cc.RigidBodyType.Static;
+            n.getComponent(cc.RigidBody).type = cc.RigidBodyType.Dynamic;
             if (fruitSlowDown) {
               n.getComponent(cc.RigidBody).linearDamping = fruitSlowDown;
             }
             n.getComponent(cc.PhysicsCircleCollider).radius = 0;
-            // 让说过更 Q 弹
+            // 让水果更 Q 弹
             if (fruitQTan) {
               n.getComponent(cc.PhysicsCircleCollider).restitution = fruitQTan;
             }
@@ -1223,6 +1223,7 @@ window.__require = function e(t, n, o) {
             }).start()
           }, t.prototype.createLevelUpFruit = function (e, t) {
           var o = cc.instantiate(this.fruitPre);
+          // cc.Sprite 为可控的行为主体
           o.parent = this.fruitNode, o.getComponent(cc.Sprite).spriteFrame = d.default.Instance.fruit[e], o.children[0].getComponent(cc.Sprite).spriteFrame = d.default.Instance.fruit[e], o.getComponent("fruitData").fruitNumber = e, o.position = t, o.scale = 0, o.getComponent(cc.RigidBody).linearVelocity = cc.v2(0, -100), o.getComponent(cc.PhysicsCircleCollider).radius = o.height / 2, o.getComponent(cc.PhysicsCircleCollider).apply(), cc.tween(o).to(.5, {
             scale: 1
           }, {
