@@ -2733,7 +2733,7 @@ window.__require = (function e(t, n, o) {
                 n.position = this.lineNode.children[1].position;
                 n.scale = 0;
                 // 物理引擎
-                n.getComponent(cc.RigidBody).type = cc.RigidBodyType.Static;
+                n.getComponent(cc.RigidBody).type = cc.RigidBodyType.Dynamic;
                 if (fruitSlowDown) {
                   n.getComponent(cc.RigidBody).linearDamping = fruitSlowDown;
                 }
@@ -2773,7 +2773,7 @@ window.__require = (function e(t, n, o) {
                   (o.getComponent(cc.RigidBody).linearVelocity = cc.v2(
                     0,
                     -100
-                  ),
+                  )),
                   (o.getComponent(cc.RigidBody).angularVelocity = s.default.RandomInteger(-5, 5)),
                   (o.getComponent(cc.PhysicsCircleCollider).radius =
                     o.height / 2),
