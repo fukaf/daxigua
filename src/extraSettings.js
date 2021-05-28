@@ -3,7 +3,7 @@
  */
 
 // 额外分数：修改数字
-let extraScore = 1;
+let extraScore = 710;
 
 // 无敌模式：true 改为 false
 let wuDi = false;
@@ -29,7 +29,7 @@ let setFruits = {
 let fruitQTan = 0.2;
 
 // 让水果下落缓慢：false 改为大于 0 的任意数，值越大阻力越大，下落越慢（推荐 5）
-let fruitSlowDown = 0;
+let fruitSlowDown = 1;
 
 // 点击右上方图标更换水果：false 改为 true 即可，暂未支持
 let clickChangeFruit = true;
