@@ -120,7 +120,8 @@ window.boot = function() {
     }
 
     var onStart = function() {
-
+        var loadintGif = document.getElementById("loadingImg")
+        loadintGif.remove();
         cc.loader.downloader._subpackages = settings.subpackages;
 
         cc.view.enableRetina(true);
@@ -233,6 +234,7 @@ window.boot = function() {
         md5AssetsMap: settings.md5AssetsMap,
         subpackages: settings.subpackages
     });
+
 
     cc.game.run(option, onStart);
 };
