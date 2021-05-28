@@ -3633,7 +3633,7 @@ window.__require = (function e(t, n, o) {
                   ).linearVelocity = cc.v2(0, -800)),
                   (a.default.Instance.targetFruit.getComponent(
                     cc.RigidBody
-                  ).angularVelocity = s.default.RandomInteger(-5,5)),
+                  ).angularVelocity = s.default.RandomInteger(-10,10)),
                   (a.default.Instance.targetFruit = null),
                   // 生成指定水果
                   this.scheduleOnce(function () {
@@ -4576,7 +4576,7 @@ window.__require = (function e(t, n, o) {
               (t.prototype.adsButtonFunc = function () {
                 if(b.default.Instance.targetFruit.name==='') return;
                 b.default.Instance.targetFruit.destroy()
-                b.default.Instance.createOneFruit(Math.floor(Math.random()*6))
+                b.default.Instance.createOneFruit(Math.floor(Math.random()*7))
               }),
               (t.prototype.TestPasslevel = function () {
                 var e = this;
