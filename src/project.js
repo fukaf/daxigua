@@ -7885,7 +7885,7 @@ window.__require = (function e(t, n, o) {
                 t +
                 "\u4e2d\u5f97\u4e86" +
                 e +
-                "\u5206\uff0c\u51fb\u8d25\u4e86\u5168\u740399%\u7684\u73a9\u5bb6\uff0c\u8fbe\u5230\u4e86\u884c\u4e91\u6d41\u6c34\u7684\u5883\u754c\uff01";
+                "\u5206\uff0c\u51fb\u8d25\u4e86\u5168\u7403999%\u7684\u73a9\u5bb6\uff0c\u8fbe\u5230\u4e86\u884c\u4e91\u6d41\u6c34\u7684\u5883\u754c\uff01";
             else if (e > i && e < this.game_max_score) {
               n =
                 "\u6211\u5728" +
@@ -7953,7 +7953,7 @@ window.__require = (function e(t, n, o) {
               n =
                 "I got in the game in " +
                 e +
-                " points, beating out 99% of global players\uff01";
+                " points, beating out 999% of global players\uff01";
             else if (e > i && e < this.game_max_score) {
               n =
                 "I got " +
