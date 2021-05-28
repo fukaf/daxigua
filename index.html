@@ -223,9 +223,7 @@
                 tempSeconds = percent;
             }
         }
-
-        
-        /*setTimeout("ShowBannerAD()","2000");*/
+ 
     </script>
 
 
@@ -254,8 +252,9 @@
                 }
 
                 var splash = document.getElementById('splash');
-                '+loadintGif+'.remove();
                 splash.style.display = 'block';
+                var loadintGif = document.getElementById("loadingImg")
+                loadintGif.remove();
 
 
                 console.log("indexlTextTTTT");
