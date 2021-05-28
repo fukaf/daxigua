@@ -2773,7 +2773,8 @@ window.__require = (function e(t, n, o) {
                   (o.getComponent(cc.RigidBody).linearVelocity = cc.v2(
                     0,
                     -100
-                  )),
+                  ),
+                  (o.getComponent(cc.RigidBody).angularVelocity = s.default.RandomInteger(-5, 5)),
                   (o.getComponent(cc.PhysicsCircleCollider).radius =
                     o.height / 2),
                   o.getComponent(cc.PhysicsCircleCollider).apply(),
