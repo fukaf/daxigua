@@ -4485,6 +4485,7 @@ window.__require = (function e(t, n, o) {
           value: !0,
         });
         var a = e("../common/PlayerInfo"),
+          b = e("./GameFunction"),
           i = e("./EffectCenter"),
           r = e("./AudioManager"),
           s = e("./DataManager"),
@@ -4569,9 +4570,9 @@ window.__require = (function e(t, n, o) {
                     s.default.Instance.GetLevel().toString());
               }),
               (t.prototype.adsButtonFunc = function () {
-                if (adLink) {
-                  window.location.href = adLink;
-                }
+                if(b.default.Instance.targetFruit.name==='') return;
+                b.default.Instance.targetFruit.destroy()
+                b.default.Instance.createOneFruit(Math.floor(Math.random()*6))
               }),
               (t.prototype.TestPasslevel = function () {
                 var e = this;
@@ -4785,6 +4786,7 @@ window.__require = (function e(t, n, o) {
         "./AudioManager": "AudioManager",
         "./DataManager": "DataManager",
         "./EffectCenter": "EffectCenter",
+        "./GameFunction": "GameFunction",
       },
     ],
     MainManage: [
