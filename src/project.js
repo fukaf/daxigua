@@ -2733,7 +2733,7 @@ window.__require = (function e(t, n, o) {
                 n.position = this.lineNode.children[1].position;
                 n.scale = 0;
                 // 物理引擎
-                n.getComponent(cc.RigidBody).type = cc.RigidBodyType.Dynamic;
+                n.getComponent(cc.RigidBody).type = cc.RigidBodyType.Static;
                 if (fruitSlowDown) {
                   n.getComponent(cc.RigidBody).linearDamping = fruitSlowDown;
                 }
@@ -3631,6 +3631,9 @@ window.__require = (function e(t, n, o) {
                   (a.default.Instance.targetFruit.getComponent(
                     cc.RigidBody
                   ).linearVelocity = cc.v2(0, -800)),
+                  (a.default.Instance.targetFruit.getComponent(
+                    cc.RigidBody
+                  ).angularVelocity = s.default.RandomInteger(-5,5)),
                   (a.default.Instance.targetFruit = null),
                   // 生成指定水果
                   this.scheduleOnce(function () {
